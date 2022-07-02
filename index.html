@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <header id="header" class="header">
+        <h2 class="product">Products</h2>
+       <div class="cart-details">
+        <button class="cart-details-btn" id="cart-details-btn">
+            <img class="cart-img" src="shopping cart img/shopping-cart-logo.jpg" alt="">
+        </button>
+           <div id="itemCount" class="item-count">0</div>
+       </div>
+    </header>
+    <main id="products-container" class="products-container">
+        <!-- <div class="products">
+            <img src="shopping cart img\Crocodile Pattern Mens Bullock Leather Shoes Oxford Formal Shoes Retro Black-19,500Naira.jpg" alt="" class="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details">
+                <p class="product-rating">4.5(145)</p>
+                <h2 class="product-name">Men's Bullock Leather Shoe</h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price">$39.60</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <img src="shopping cart img\Men Sneakers Running Shoes Lace-up Sport Shoes 6,900N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">3.5(77)</p>
+                <h2 class="product-name" id="product-name">Men Sneakers Lace Up</h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$13.80</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <img src="shopping cart img\Men's New Work Shoes-black 11,390N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">4.5(1455)</p>
+                <h2 class="product-name" id="product-name">Men's New Work Shoes-black</h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$22.99</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <img src="shopping cart img\Crocodile Pattern Mens Bullock Leather Shoes Oxford Formal Shoes Retro Big Size 18,600N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">4.5(145)</p>
+                <h2 class="product-name" id="product-name">Mens Bullock Leather</h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$37.20</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="products" id="products">
+            <img src="shopping cart img\Men's Casual Shoes Breathable Shoes Running Sneakers 5,500N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">3.0(135)</p>
+                <h2 class="product-name" id="product-name">Men Breathable Sneakers</h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$11.00</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <img src="shopping cart img\Girls Sneakers 4,700N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">3.5(145)</p>
+                <h2 class="product-name" id="product-name">Girls' Sneakers Black</h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$9.40</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <img src="shopping cart img\Men Breathable Mesh Shoes Loafers Sneakers Formal Shoes 8,700N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">4.5(1200)</p>
+                <h2 class="product-name" id="product-name">Men Breathable Mesh Shoes </h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$17.40</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <img src="shopping cart img\Ladies Casual Sneakers Breathable Fitness Sport 4,200N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">4.5(145)</p>
+                <h2 class="product-name" id="product-name">Ladies Casual Sneakers</h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$8.99</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <img src="shopping cart img\Men Sneakers Running Shoes Lace-up Sport Shoes 6,900N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">4.0(184)</p>
+                <h2 Men class="product-name" id="product-name">Men Sneakers Running Shoes </h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$13.99</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <img src="shopping cart img\Men Suede Leather Formal Business Shoes Brown 14,000N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">4.5(1125)</p>
+                <h2 class="product-name" id="product-name">Men Suede Leather</h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$28.00</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <img src="shopping cart img\Men's Hiking Shoes Casual Shoes Sneakers + Free Socks (Green) 7,690N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">3.0(145)</p>
+                <h2 class="product-name" id="product-name">Casual Shoes Sneakers</h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$15.38</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <img src="shopping cart img\Men's New Bright Leather Work Business Pointed Toe Shoes 10,580N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">4.5(1405)</p>
+                <h2 class="product-name" id="product-name">Men's New Bright Leather</h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$21.16</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <img src="shopping cart img\Mens Casual Breathable Shoes Running Sneakers 4999N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">3.0(145)</p>
+                <h2 class="product-name" id="product-name">Men's Casual Sneakers</h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$9.99</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <img src="shopping cart img\Mens Formal Patent Leather Shoes - Black 14,700N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">4.5(1400)</p>
+                <h2 class="product-name" id="product-name">Men's Leather Shoe Black</h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$29.40</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <img src="shopping cart img\Mens Loafers Leather Shoes Formal Shoes - Brown 17,800N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">4.0(145)</p>
+                <h2 class="product-name" id="product-name">Men Loafers Leather Brown</h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$35.00</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <img src="shopping cart img\Solid Black Shoes Men 21,725N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">4.0(1450)</p>
+                <h2 class="product-name" id="product-name">Solid Brown Shoes Men</h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$43.45</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <img src="shopping cart img\Pig Size Men Oxfords Shoes 25,882N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">4.5(145)</p>
+                <h2 class="product-name" id="product-name">Men Oxfords Shoes</h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$51.77</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <img src="shopping cart img\Mens Suede Martin Brock Boot Bullock Formal Dress Shoes Leather Shoes Black 14,000N.jpg" alt="" class="product-img" id="product-img">
+            <div class="display-in-cart">
+                Item in Cart!
+            </div>
+            <div class="product-details" id="product-details">
+                <p class="product-rating" id="product-rating">3.0(125)</p>
+                <h2 class="product-name" id="product-name">Mens Suede Martin Brock</h2>
+                <p class="reference">Reference 1204</p>
+                <h2 class="product-price" id="product-price">$28.00</h2>
+                <button class="add-btn" id="add-btn">
+                    Add to Cart
+                </button>
+                <button class="remove-btn" id="remove-btn">
+                    Remove from Cart
+                </button>
+            </div>
+        </div> -->
+
+    </main>
+
+    <footer class="footer" id="product-page-footer">
+        <div class="btt">
+            <button class="btt-btn">
+                Back To Top 
+            </button>
+        </div>
+    </footer>
+
+
+    <h1 id="cart-heading">Cart Details</h1>
+    <div class="addedItemsContainer" id="addedItemsContainer">
+        <h3>Order Summary</h3>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>PRODUCT IMAGE</th>
+                    <th>PRODUCT NAME</th>
+                    <th>QUANTITY</th>
+                    <th>PRICE</th>
+                    <th>REMOVE</th>
+                </tr>
+            </thead>
+            <tbody class="containItems">
+                <!-- <tr>
+                    <td><img class="item-img" src="shopping cart img\Crocodile Pattern Mens Bullock Leather Shoes Oxford Formal Shoes Retro Black-19,500Naira.jpg" alt="" class="product-img"></td>
+                    <td class="item-name">Men's Bullock Leather Shoe</td>
+                    <td>
+                        <i class="bi bi-dash-lg"></i>
+                        <span class="quantity">0</span>
+                        <i class="bi bi-plus-lg"></i>
+                    </td>
+                    <td class="price">$39.60</td>
+                    <td><button class="delete-button"><img class="delete-icon" src="shopping cart img\delete-icon.png" alt=""></button></td>
+                </tr >
+                <tr>
+                    <td><img class="item-img" src="shopping cart img\Crocodile Pattern Mens Bullock Leather Shoes Oxford Formal Shoes Retro Black-19,500Naira.jpg" alt="" class="product-img"></td>
+                    <td class="item-name">Men's Bullock Leather Shoe</td>
+                    <td><input type="number" name="quantity" id="quantity"></td>
+                    <td class="price">$39.60</td>
+                    <td><button class="delete-button"><img class="delete-icon" src="shopping cart img\delete-icon.png" alt=""></button></td>
+                </tr>
+                <tr>
+                    <td><img class="item-img" src="shopping cart img\Crocodile Pattern Mens Bullock Leather Shoes Oxford Formal Shoes Retro Black-19,500Naira.jpg" alt="" class="product-img"></td>
+                    <td class="item-name">Men's Bullock Leather Shoe</td>
+                    <td><input type="number" name="quantity" id="quantity"></td>
+                    <td class="price">$39.60</td>
+                    <td><button class="delete-button"><img class="delete-icon" src="shopping cart img\delete-icon.png" alt=""></button></td>
+                </tr> -->
+            </tbody>
+            <tfoot>
+               
+            </tfoot>
+        </table>
+
+
+        <div class="cart-page-footer">
+            <div class="footer-left">
+                <h5>Apply Coupon to get Discount!</h5>
+                <input type="text" class="input-coupon" placeholder="Coupon Code">
+                <button class="apply-btn">Apply</button>
+            </div>
+
+            <div class="footer-right">
+                <div class="price-value">
+                    <div>Subtotal:</div>
+                    <div id="Subtotal-Value">$0</div>
+                </div>
+                <div class="price-value">
+                    <div>Shipping Cost(+):</div>
+                    <div>$0</div>
+                </div>
+                <div class="price-value">
+                    <div>Discount(-):</div>
+                    <div>$0</div>
+                </div>
+                <div class="price-value">
+                    <div>Tax:</div>
+                    <div>$0</div>
+                </div>
+                <div class="total-div">
+                    <div class="total-payable">Total Payable:</div>
+                    <div id="total-amount">$0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-page-end">
+            <button class="continue-shopping-btn" id="continue-shopping-button">
+                Continue shopping 
+            </button>
+            <button class="checkout-btn" id="checkout-button">
+                Proceed to Checkout
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
